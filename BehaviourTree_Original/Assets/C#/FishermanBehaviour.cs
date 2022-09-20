@@ -9,11 +9,13 @@ public class FishermanBehaviour : MonoBehaviour
     public GameObject StartPoint;
     public GameObject BoardPoint;
     public GameObject FishPoint;
+    public GameObject RestPoint;
 
     public float WaitTimeOnStart;
     public float WaitTimeOnBoarding;
     public float WaitTimeOnFishing;
     public float WaitTimeOnStoring;
+    public float WaitTimeOnRest;
 
     [Range(0f, 1f)]
     public float SuccessProbabilityOnStart;
@@ -31,6 +33,8 @@ public class FishermanBehaviour : MonoBehaviour
     public float SuccessProbabilityCatchSalmon;
     [Range(0f, 1f)]
     public float SuccessProbabilityStoreFish;
+    [Range(0f, 1f)]
+    public float SuccessProbabilityTakeRest;
 
     private NavMeshAgent _Agent;
     private BehaviourTree _Tree;
@@ -72,6 +76,7 @@ public class FishermanBehaviour : MonoBehaviour
         Leaf goToBoardPoint = new Leaf("Go To Board Point", GoToBoardPoint);
         Leaf goToFishPoint = new Leaf("Go To Fish Point", GoToFishPoint);
         Leaf goToStorePoint = new Leaf("Go To Store Point", GoToStorePoint);
+        Leaf goToRestPoint = new Leaf("Go To Rest Point", GoToRestPoint);
 
         Selector catchFish = new Selector("Catch A Fish");
         Leaf catchTuna = new Leaf("Catch A Tuna", CatchTuna);
@@ -82,6 +87,7 @@ public class FishermanBehaviour : MonoBehaviour
         Leaf waitOnStart = new Leaf("Wait On Start", WaitOnStart);
         Leaf waitOnBoarding = new Leaf("Wait On Boarding", WaitOnBoarding);
         Leaf waitOnStoring = new Leaf("Wait On Storing", WaitOnStoring);
+        Leaf waitOnRest = new Leaf("Wait On Rest", WaitOnRest);
 
         Leaf storeFish = new Leaf("Store A Fish", StoreFish);
 
@@ -100,6 +106,10 @@ public class FishermanBehaviour : MonoBehaviour
         liveLife.AddChild(goToStorePoint);
         liveLife.AddChild(waitOnStoring);
         liveLife.AddChild(storeFish);
+
+        liveLife.AddChild(goToStartPoint);
+        liveLife.AddChild(goToRestPoint);
+        liveLife.AddChild(waitOnRest);
 
         _Tree.AddChild(liveLife);
 
@@ -153,6 +163,11 @@ public class FishermanBehaviour : MonoBehaviour
         }
 
         return GoToLocation(new Vector3(3 + (FishManager.FishNum-1) % 5, 1.36f, 4.4f - FishManager.FishNum / 5 + zOffset));
+    }
+
+    public Node.Status GoToRestPoint()
+    {
+        return GoToLocation(RestPoint.transform.position);
     }
 
     Node.Status GoToLocation(Vector3 destination)
@@ -216,6 +231,11 @@ public class FishermanBehaviour : MonoBehaviour
         return s;
     }
 
+    public Node.Status WaitOnRest()
+    {
+        return Wait(WaitTimeOnRest);
+    }
+
     private float _elapsedTime = 0;
 
     Node.Status Wait(float waitSeconds)
@@ -243,6 +263,9 @@ public class FishermanBehaviour : MonoBehaviour
                     break;
                 case "Wait On Storing":
                     successProbability = SuccessProbabilityStoreFish;
+                    break;
+                case "Wait On Rest":
+                    successProbability = SuccessProbabilityTakeRest;
                     break;
             }
 
@@ -365,6 +388,7 @@ public class FishermanBehaviour : MonoBehaviour
 
         return Node.Status.SUCCESS;
     }
+
     #endregion
 
     // Update is called once per frame
