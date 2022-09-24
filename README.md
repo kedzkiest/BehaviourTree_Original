@@ -34,15 +34,15 @@ Keyboard:
 
 ### Copyright notice for materials used
 SE
-正解1 from OtoLogic (https://otologic.jp/)
-不正解2 from OtoLogic
-ダイビング from 効果音ラボ (https://soundeffect-lab.info/)
+- 正解1 from OtoLogic (https://otologic.jp/)
+- 不正解2 from OtoLogic
+- ダイビング from 効果音ラボ (https://soundeffect-lab.info/)
 
 3D models
-shed: jerome-aurand from cgtrader (https://www.cgtrader.com/)
-tuna: Burzum from cgtrader
-salmon: kaangvl from cgtrader
-fisherboat: seemlyhasan from cgtrader
+- shed: jerome-aurand from cgtrader (https://www.cgtrader.com/)
+- tuna: Burzum from cgtrader
+- salmon: kaangvl from cgtrader
+- fisherboat: seemlyhasan from cgtrader
 
 ### Developers
 
