@@ -32,6 +32,18 @@ Keyboard:
 ![2](https://user-images.githubusercontent.com/66341676/190095374-18cb2c73-9734-4425-a0c0-7c207e9eec4d.png)
 ![3](https://user-images.githubusercontent.com/66341676/190095381-aa8bc124-7b76-4a1c-8cf4-1b0f6940d950.png)
 
+### Copyright notice for materials used
+SE
+正解1 from OtoLogic (https://otologic.jp/)
+不正解2 from OtoLogic
+ダイビング from 効果音ラボ (https://soundeffect-lab.info/)
+
+3D models
+shed: jerome-aurand from cgtrader (https://www.cgtrader.com/)
+tuna: Burzum from cgtrader
+salmon: kaangvl from cgtrader
+fisherboat: seemlyhasan from cgtrader
+
 ### Developers
 
  - s1280188 Kaede Takahashi
