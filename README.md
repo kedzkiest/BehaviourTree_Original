@@ -34,4 +34,4 @@ Keyboard:
 
 ### Developers
 
- - Kaede Takahashi
+ - s1280188 Kaede Takahashi
