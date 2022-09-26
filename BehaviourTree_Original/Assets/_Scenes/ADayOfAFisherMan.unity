@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 281776fd9676b784a85b3dde7e8f3325, type: 2}
 --- !u!1 &77813969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,7 +1503,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 326025627294318029, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1606265015684873010, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_IsActive
@@ -1511,7 +1511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1606265015684873010, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2050189856947743183, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_IsActive
@@ -1519,7 +1519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2050189856947743183, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2425198059496765436, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_Name
@@ -1575,11 +1575,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2425198059573920225, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2425198059686701410, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2425198059686701438, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_LocalScale.x
@@ -1607,23 +1607,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2770441205786913407, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3272253362646923760, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3272253362949064704, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5828971803447836969, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6225004425527293178, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6460780301437460936, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_IsActive
@@ -1631,15 +1631,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6460780301437460936, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7719648786071922334, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8792963238260396206, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 364065c6cef63f5408c90159bfa24d5a, type: 3}
